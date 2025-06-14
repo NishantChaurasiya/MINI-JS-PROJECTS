@@ -1,0 +1,345 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: poppins;
+}
+html,
+body {
+  width: 100%;
+
+  background-color: rgb(206, 206, 206);
+}
+#phone-header {
+  display: none;
+}
+
+header {
+  background-color: white;
+  width: 100%;
+}
+#main {
+  width: 100%;
+}
+#hidden{
+  display: none;
+}
+#hero-section {
+  padding: 1rem 4rem 3rem 4rem;
+  border-bottom-left-radius: 4rem;
+  border-bottom-right-radius: 4rem;
+  background-color: rgb(206, 206, 206);
+}
+#desktop-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 500;
+  width: 100%;
+  height: 50px;
+}
+.header-part {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+#right-header span {
+  font-size: 10px;
+  align-items: center;
+}
+#right-header button {
+  border: none;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 5px 1.2rem;
+  border-radius: 100px;
+}
+#details {
+  padding-top: 3rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1.2rem;
+}
+#headings {
+  font-size: 1.5rem;
+}
+#profile-pic {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#name {
+  white-space: nowrap;
+  transform: translate(0, -50%) rotate(-10deg);
+  font-size: 10px;
+  left: 70px;
+  position: absolute;
+  padding: 5px 10px;
+  background-color: white;
+  color: black;
+  font-weight: 500;
+  border-radius: 100px;
+}
+#profile-pic img {
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+.btn-container button {
+  padding: 10px 1.5rem;
+  border: none;
+  background-color: black;
+  color: white;
+  font-size: 10px;
+  border-radius: 100px;
+}
+#companies {
+  display: flex;
+  width: 100%;
+  padding: 3rem 1rem;
+  align-items: center;
+  font-weight: 700;
+  justify-content: space-evenly;
+  border-bottom-left-radius: 4rem;
+  border-bottom-right-radius: 4rem;
+  background-color: white;
+}
+#collaboration {
+  padding-block: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  border-top-left-radius: 4rem;
+  border-top-right-radius: 4rem;
+}
+#collaboration h4 {
+  font-weight: 600;
+  font-size: 1.2rem;
+  text-align: center;
+  margin: 1rem;
+  word-spacing: 10px;
+}
+#skills {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  border-top: 1px solid rgba(133, 129, 129, 0.367);
+  padding-top: 5rem;
+}
+#services {
+  position: absolute;
+  top: -12px;
+  border-radius: 100px;
+  transform: rotate(-10deg);
+  font-size: 10px;
+  background-color: white;
+  padding: 5px 14px;
+  font-weight: 500;
+}
+#skills img {
+  width: 45px;
+}
+.skill {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  align-content: space-between;
+  text-align: center;
+}
+.skill span {
+  font-weight: 500;
+}
+.skill p {
+  width: 150px;
+}
+
+#contact-Us {
+  width: 100%;
+  display: flex;
+  background-color: white;
+  align-items: center;
+  padding: 3rem;
+  gap: 30px;
+  flex-direction: column;
+  border-top-left-radius: 4rem;
+  border-top-right-radius: 4rem;
+}
+#contact-Us h4 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  width: 300px;
+  text-align: center;
+}
+#hand-shake {
+  width: 60px;
+}
+#btn-2 {
+  background-color: white;
+  color: black;
+  border: 1px solid rgb(136, 134, 134);
+}
+footer {
+  background-color: white;
+  padding-inline: 1rem;
+  width: 100%;
+}
+
+#copy-right {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid rgba(181, 179, 179, 0.795);
+  width: 95%;
+  margin-inline: auto;
+  padding-block: 1rem;
+  font-size: 15px;
+}
+
+@media only screen and (max-width: 1100px) {
+  #companies {
+    font-size: 12px;
+    padding: 2rem 1rem;
+  }
+  #skills {
+    gap: 50px;
+    max-width: 950px;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .skill {
+    max-width: 350px;
+    width: 100%;
+  }
+  #collaboration h4 {
+    font-size: 1rem;
+  }
+}
+#copy-right {
+  font-size: 12px;
+}
+
+#contact-Us {
+  gap: 20px;
+  padding: 2rem;
+}
+#contact-Us h4 {
+  font-size: 1rem;
+  width: 200px;
+}
+#hand-shake {
+  width: 40px;
+}
+
+@media only screen and (max-width: 750px) {
+  #phone-header {
+    padding:10px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+  
+  }
+  #menu {
+    font-size: 20px;
+    cursor: pointer;
+  }
+  .phone-nav {
+    top: 50px;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    padding: 2rem 1rem;
+    background-color: rgb(255, 255, 255);
+  }
+  .cross{
+    color:black;
+    position:absolute ;
+    right: 10px;
+    top: 55px;
+    cursor: pointer;
+  }
+  .phone-nav a {
+    text-decoration: none;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.641);
+    width: 100%;
+    border: 2px solid black;
+
+    border-radius: 100px;
+    color: black;
+    padding-block: 5px;
+  }
+  .phone-nav a:hover {
+    text-decoration: none;
+    text-align: center;
+    background-color: rgb(208, 255, 0);
+    width: 100%;
+
+    border-radius: 12px;
+    color: rgb(5, 77, 5);
+  }
+  #hidden {
+    display: none;
+  }
+  #desktop-header {
+    display: none;
+  }
+  #hero-section {
+    margin-top: -20px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    padding-bottom: 10px;
+  }
+  #details {
+    padding-bottom: 0;
+    padding-inline: 1rem;
+  }
+
+  #collaboration h4 {
+    font-size: 1rem;
+    margin: 0;
+    padding-inline: 1rem;
+  }
+  #companies {
+    display: none;
+  }
+  .skill {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  #contact-Us {
+    gap: 10px;
+    padding: 1rem;
+  }
+  #copy-right {
+    font-size: 8px;
+  }
+  #contact-Us h4 {
+    font-size: 12px;
+    width: 120px;
+  }
+  #hand-shake {
+    width: 30px;
+  }
+  .btn-container button {
+    padding: 8px 1rem;
+    font-size: 8px;
+  }
+  #right-header button {
+  border: none;
+  font-size: 8px;
+  padding: 5px 1rem;
+  border-radius: 100px;
+}
+}
