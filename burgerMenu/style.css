@@ -282,7 +282,7 @@ footer {
   .phone-nav a:hover {
     text-decoration: none;
     text-align: center;
-    background-color: rgb(208, 255, 0);
+    background-color: rgba(208, 255, 0, 0.63);
     width: 100%;
 
     border-radius: 12px;
